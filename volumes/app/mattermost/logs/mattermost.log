@@ -1,0 +1,295 @@
+{"level":"info","ts":1600920740.7931635,"caller":"utils/i18n.go:83","msg":"Loaded system translations","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"level":"info","ts":1600920740.7933013,"caller":"app/server_app_adapters.go:58","msg":"Server is initializing..."}
+{"level":"info","ts":1600920740.7974293,"caller":"sqlstore/supplier.go:227","msg":"Pinging SQL","database":"master"}
+{"level":"error","ts":1600920740.8041313,"caller":"sqlstore/supplier.go:239","msg":"Failed to ping DB","error":"dial tcp 172.24.0.2:3306: connect: connection refused","retrying in seconds":10}
+{"level":"info","ts":1600920750.8233814,"caller":"sqlstore/supplier.go:227","msg":"Pinging SQL","database":"master"}
+{"level":"error","ts":1600920750.8533342,"caller":"sqlstore/supplier.go:239","msg":"Failed to ping DB","error":"dial tcp 172.24.0.2:3306: connect: connection refused","retrying in seconds":10}
+{"level":"info","ts":1600920760.8534324,"caller":"sqlstore/supplier.go:227","msg":"Pinging SQL","database":"master"}
+{"level":"info","ts":1600920761.7233663,"caller":"sqlstore/upgrade.go:116","msg":"The database schema version has been set","version":"5.25.0"}
+{"level":"error","ts":1600920765.08013,"caller":"app/server_app_adapters.go:152","msg":"Mail server connection test is failed: SendEmailNotifications is not true"}
+{"level":"error","ts":1600920765.0801888,"caller":"app/server_app_adapters.go:156","msg":"SiteURL must be set. Some features will operate incorrectly if the SiteURL is not set. See documentation for details: http://about.mattermost.com/default-site-url"}
+{"level":"info","ts":1600920765.0810447,"caller":"app/migrations.go:26","msg":"Migrating roles to database."}
+{"level":"info","ts":1600920765.1464243,"caller":"sqlstore/post_store.go:1571","msg":"Post.Message has size restrictions","max_characters":16383,"max_bytes":65535}
+{"level":"info","ts":1600920765.1503158,"caller":"app/migrations.go:102","msg":"Migrating emojis config to database."}
+{"level":"info","ts":1600920765.6911066,"caller":"mlog/log.go:167","msg":"Starting up plugins"}
+{"level":"info","ts":1600920765.6911662,"caller":"app/plugin.go:202","msg":"Syncing plugins from the file store"}
+{"level":"info","ts":1600920771.1519623,"caller":"mlog/sugar.go:19","msg":"Ensuring Surveybot exists","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600920776.6184845,"caller":"mlog/sugar.go:19","msg":"Surveybot created","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600920776.9519858,"caller":"mlog/sugar.go:19","msg":"Upgrade detected. Checking if a survey should be scheduled.","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600920777.0475957,"caller":"mlog/sugar.go:19","msg":"Scheduling next survey for Oct 15, 2020","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600920778.2992775,"caller":"app/server.go:273","msg":"Current version is 5.25.0 (5.25.0/Wed Jul 15 16:22:48 UTC 2020/0e46bac9fdd8c1140ad0e036104735fb4cbebef3/none)","current_version":"5.25.0","build_number":"5.25.0","build_date":"Wed Jul 15 16:22:48 UTC 2020","build_hash":"0e46bac9fdd8c1140ad0e036104735fb4cbebef3","build_hash_enterprise":"none"}
+{"level":"info","ts":1600920778.329892,"caller":"app/server.go:284","msg":"Team Edition Build","enterprise_build":false}
+{"level":"info","ts":1600920778.3299196,"caller":"app/server.go:288","msg":"Printing current working","directory":"/mattermost"}
+{"level":"info","ts":1600920778.3299313,"caller":"app/server.go:289","msg":"Loaded config","source":"file:///mattermost/config/config.json"}
+{"level":"error","ts":1600920778.6089046,"caller":"mlog/log.go:175","msg":"RPC call OnConfigurationChange to plugin failed.","plugin_id":"com.mattermost.nps","error":"connection is shut down"}
+{"level":"error","ts":1600920778.9730234,"caller":"mlog/log.go:175","msg":"RPC call OnConfigurationChange to plugin failed.","plugin_id":"com.mattermost.nps","error":"connection is shut down"}
+{"level":"info","ts":1600920778.9976876,"caller":"jobs/workers.go:73","msg":"Starting workers"}
+{"level":"info","ts":1600920778.9977407,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600920779.0059812,"caller":"app/web_hub.go:83","msg":"Starting websocket hubs","number_of_hubs":2}
+{"level":"info","ts":1600920779.018088,"caller":"jobs/schedulers.go:74","msg":"Starting schedulers."}
+{"level":"info","ts":1600920779.4139404,"caller":"app/license.go:40","msg":"License key from https://mattermost.com required to unlock enterprise features."}
+{"level":"info","ts":1600920779.88205,"caller":"app/server.go:525","msg":"Starting Server..."}
+{"level":"info","ts":1600920779.8821042,"caller":"app/server.go:551","msg":"RateLimiter is enabled"}
+{"level":"info","ts":1600920779.8822625,"caller":"app/server.go:594","msg":"Server is listening on [::]:8000","address":"[::]:8000"}
+{"level":"error","ts":1600920808.3086207,"caller":"plugin/health_check.go:59","msg":"Health check failed for plugin","id":"com.mattermost.nps","error":"Plugin RPC connection is not responding"}
+{"level":"warn","ts":1600920808.3188515,"caller":"plugin/hclog_adapter.go:69","msg":"error closing client during Kill","plugin_id":"com.mattermost.nps","wrapped_extras":"errconnection is shut down"}
+{"level":"warn","ts":1600920808.320765,"caller":"plugin/hclog_adapter.go:71","msg":"plugin failed to exit gracefully","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600920808.3792968,"caller":"mlog/sugar.go:19","msg":"Ensuring Surveybot exists","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600920849.758678,"caller":"migrations/worker.go:109","msg":"Worker: Job is complete","worker":"Migrations","job_id":"od31u6fhi3r77cgk4s1gfyc89o"}
+{"level":"error","ts":1600923396.1569285,"caller":"app/user.go:180","msg":"Failed to send welcome email on create user from signup","error":"SendWelcomeEmail: Failed to send welcome email successfully, Send Email Notifications and Require Email Verification is disabled in the system console"}
+{"level":"warn","ts":1600928579.2285235,"caller":"app/channel.go:2192","msg":"Failed to get channel","error":"SqlChannelStore.Get: We encountered an error finding the channel., id=dw8fyxxuejdptb4auqcpk9jjyc, Error 1054: Unknown column 'GroupConstrained' in 'field list'"}
+{"level":"error","ts":1600928579.2388537,"caller":"mlog/log.go:175","msg":"Unable to update the last viewed at time.","path":"/api/v4/channels/members/me/view","request_id":"dxx6jdbnpidw3prmcfcxork1oh","ip_addr":"172.24.0.4","user_id":"7zhgqccrkbyxung39h34c3uway","method":"POST","err_where":"SqlChannelStore.UpdateLastViewedAt","http_code":400,"err_details":"channel_ids=dw8fyxxuejdptb4auqcpk9jjyc, user_id=7zhgqccrkbyxung39h34c3uway, No channels found"}
+{"level":"error","ts":1600928579.3024588,"caller":"mlog/log.go:175","msg":"No channels were found.","path":"/api/v4/users/me/teams/q11xwpcea7rh8dn5t7yynf5u3h/channels","request_id":"m3mbhmk73fg8fx875zb1r1z58h","ip_addr":"172.24.0.4","user_id":"7zhgqccrkbyxung39h34c3uway","method":"GET","err_where":"SqlChannelStore.GetChannels","http_code":400,"err_details":"teamId=q11xwpcea7rh8dn5t7yynf5u3h, userId=7zhgqccrkbyxung39h34c3uway"}
+{"level":"error","ts":1600928579.3366077,"caller":"mlog/log.go:175","msg":"Unable to get the channel members.","path":"/api/v4/users/me/teams/q11xwpcea7rh8dn5t7yynf5u3h/channels/members","request_id":"7dg445ctif8w3ff5gf1xb3pssh","ip_addr":"172.24.0.4","user_id":"7zhgqccrkbyxung39h34c3uway","method":"GET","err_where":"SqlChannelStore.GetMembersForUser","http_code":500,"err_details":"teamId=q11xwpcea7rh8dn5t7yynf5u3h, userId=7zhgqccrkbyxung39h34c3uway, err=Error 1054: Unknown column 'TeamScheme.DefaultChannelGuestRole' in 'field list'"}
+{"level":"warn","ts":1600928582.3701057,"caller":"app/channel.go:2192","msg":"Failed to get channel","error":"SqlChannelStore.Get: We encountered an error finding the channel., id=dw8fyxxuejdptb4auqcpk9jjyc, Error 1054: Unknown column 'GroupConstrained' in 'field list'"}
+{"level":"error","ts":1600928582.3707008,"caller":"mlog/log.go:175","msg":"Unable to update the last viewed at time.","path":"/api/v4/channels/members/me/view","request_id":"kt1btg67s38ut8joxfjchor9qh","ip_addr":"172.24.0.4","user_id":"7zhgqccrkbyxung39h34c3uway","method":"POST","err_where":"SqlChannelStore.UpdateLastViewedAt","http_code":400,"err_details":"channel_ids=dw8fyxxuejdptb4auqcpk9jjyc, user_id=7zhgqccrkbyxung39h34c3uway, No channels found"}
+{"level":"warn","ts":1600928584.9195242,"caller":"app/channel.go:2192","msg":"Failed to get channel","error":"SqlChannelStore.Get: We encountered an error finding the channel., id=dw8fyxxuejdptb4auqcpk9jjyc, Error 1054: Unknown column 'GroupConstrained' in 'field list'"}
+{"level":"error","ts":1600928584.9201183,"caller":"mlog/log.go:175","msg":"Unable to update the last viewed at time.","path":"/api/v4/channels/members/me/view","request_id":"pn7aruo7higr9daz3ktp18amrh","ip_addr":"172.24.0.4","user_id":"7zhgqccrkbyxung39h34c3uway","method":"POST","err_where":"SqlChannelStore.UpdateLastViewedAt","http_code":400,"err_details":"channel_ids=dw8fyxxuejdptb4auqcpk9jjyc, user_id=7zhgqccrkbyxung39h34c3uway, No channels found"}
+{"level":"error","ts":1600928587.7963605,"caller":"app/authorization.go:202","msg":"Failed to get roles from database with role names: system_admin,system_user ","error":"SqlRoleStore.HigherScopedPermissions: Unable to get roles., Error 1054: Unknown column 'RoleSchemes.DefaultChannelGuestRole' in 'field list'"}
+{"level":"error","ts":1600928588.0158224,"caller":"mlog/log.go:175","msg":"Unable to get the team members.","path":"/api/v4/users/me/teams/members","request_id":"4k5uoa7po38bxmmbduygeqceih","ip_addr":"172.24.0.4","user_id":"7zhgqccrkbyxung39h34c3uway","method":"GET","err_where":"SqlTeamStore.GetMembers","http_code":500,"err_details":"userId=7zhgqccrkbyxung39h34c3uway Error 1054: Unknown column 'TeamScheme.DefaultTeamGuestRole' in 'field list'"}
+{"level":"error","ts":1600928588.490822,"caller":"mlog/log.go:175","msg":"We encountered an error finding the session.","path":"/api/v4/users/logout","request_id":"68w9pn9ftf8s5r35mkzu53iwxc","ip_addr":"172.24.0.4","user_id":"7zhgqccrkbyxung39h34c3uway","method":"POST","err_where":"SqlSessionStore.Get","http_code":400,"err_details":"sessionIdOrToken=5tbby9985jfr7pappbdrk4j7ia"}
+{"level":"error","ts":1600928597.6239204,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"cca8gqd31bnt7exn7eqinf18ro","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"error","ts":1600928608.407352,"caller":"mlog/log.go:175","msg":"Login failed because your account has been deactivated.  Please contact an administrator.","path":"/api/v4/users/login","request_id":"msc85pw9mbgzbe8ir7hxe3zbbh","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"Login","http_code":401,"err_details":"user_id=qwxehsxrobdcukeyxbgrf7kkdr"}
+{"level":"error","ts":1600928619.2964373,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"1z3wrbjba3rhz8znoqamndtr7a","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"error","ts":1600928638.3434715,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"z6qfm7snyjg4j8jfzthks1c7te","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"error","ts":1600928647.26988,"caller":"mlog/log.go:175","msg":"Failed to send password reset email successfully.","path":"/api/v4/users/password/reset/send","request_id":"uqxgzkbf43fwjmouwkc9f5ijoc","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"SendPasswordReset","http_code":500,"err_details":"err=Failed to open connection."}
+{"level":"error","ts":1600928868.5336492,"caller":"mlog/log.go:175","msg":"Login failed because your account has been deactivated.  Please contact an administrator.","path":"/api/v4/users/login","request_id":"s7j68gzbtir8bfnxp17fjxucpe","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"Login","http_code":401,"err_details":"user_id=qwxehsxrobdcukeyxbgrf7kkdr"}
+{"level":"error","ts":1600928877.778726,"caller":"mlog/log.go:175","msg":"Login failed because your account has been deactivated.  Please contact an administrator.","path":"/api/v4/users/login","request_id":"pycjaajawifdiymxxuyr73gadc","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"Login","http_code":401,"err_details":"user_id=qwxehsxrobdcukeyxbgrf7kkdr"}
+{"level":"error","ts":1600931580.5679226,"caller":"app/diagnostics.go:1016","msg":"SqlTeamStore.GroupSyncedTeamCount: select error, Error 1054: Unknown column 'GroupConstrained' in 'where clause'"}
+{"level":"error","ts":1600931580.574781,"caller":"app/diagnostics.go:1021","msg":"SqlChannelStore.GroupSyncedChannelCount: select error, Error 1054: Unknown column 'GroupConstrained' in 'where clause'"}
+{"level":"error","ts":1600931580.5796115,"caller":"app/diagnostics.go:1064","msg":"SqlSchemeStore.CountWithoutPermission: select error, Error 1054: Unknown column 'Schemes.DefaultChannelGuestRole' in 'on clause'"}
+{"level":"error","ts":1600931580.5801618,"caller":"app/diagnostics.go:1075","msg":"SqlSchemeStore.CountWithoutPermission: select error, Error 1054: Unknown column 'Schemes.DefaultChannelGuestRole' in 'on clause'"}
+{"level":"error","ts":1600931580.5817647,"caller":"app/diagnostics.go:1091","msg":"SqlSchemeStore.CountWithoutPermission: select error, Error 1054: Unknown column 'Schemes.DefaultChannelGuestRole' in 'on clause'"}
+{"level":"error","ts":1600931580.712989,"caller":"app/diagnostics.go:1016","msg":"SqlTeamStore.GroupSyncedTeamCount: select error, Error 1054: Unknown column 'GroupConstrained' in 'where clause'"}
+{"level":"error","ts":1600931580.7132485,"caller":"app/diagnostics.go:1021","msg":"SqlChannelStore.GroupSyncedChannelCount: select error, Error 1054: Unknown column 'GroupConstrained' in 'where clause'"}
+{"level":"error","ts":1600931580.716736,"caller":"app/diagnostics.go:1064","msg":"SqlSchemeStore.CountWithoutPermission: select error, Error 1054: Unknown column 'Schemes.DefaultChannelGuestRole' in 'on clause'"}
+{"level":"error","ts":1600931580.71728,"caller":"app/diagnostics.go:1075","msg":"SqlSchemeStore.CountWithoutPermission: select error, Error 1054: Unknown column 'Schemes.DefaultChannelGuestRole' in 'on clause'"}
+{"level":"error","ts":1600931580.7180996,"caller":"app/diagnostics.go:1091","msg":"SqlSchemeStore.CountWithoutPermission: select error, Error 1054: Unknown column 'Schemes.DefaultChannelGuestRole' in 'on clause'"}
+{"level":"error","ts":1600934849.8524532,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"d3pdmuiywpyrmkqcknb9byroha","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"error","ts":1600934876.4432824,"caller":"mlog/log.go:175","msg":"Login failed because your account has been deactivated.  Please contact an administrator.","path":"/api/v4/users/login","request_id":"4eithz3c6pb1mxzheygyjge5dh","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"Login","http_code":401,"err_details":"user_id=qwxehsxrobdcukeyxbgrf7kkdr"}
+{"level":"error","ts":1600934882.9710276,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"kpadkganjpg3uq3qkpw868aueh","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"error","ts":1600934927.7710643,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"878an55wb7drzx9n7d69w55t9a","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"error","ts":1600934937.0761619,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"irfdspxzt38xug4aafxj6jb6fc","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"error","ts":1600934972.1022913,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"5qdxnehho7859k31ozc7xrfxfr","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"error","ts":1600934993.6159234,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"qtxpygjyt78kfj9aoe8zomhira","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"error","ts":1600935063.0265274,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"bz4kb1ik8789pnthm8zthr44ty","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"error","ts":1600935102.9691293,"caller":"mlog/log.go:175","msg":"Enter a valid email or username and/or password.","path":"/api/v4/users/login","request_id":"87pineq3xprt8g6wa7wiy8zdme","ip_addr":"172.24.0.4","user_id":"","method":"POST","err_where":"login","http_code":401,"err_details":""}
+{"level":"info","ts":1600935117.6567147,"caller":"app/server.go:416","msg":"Stopping Server..."}
+{"level":"info","ts":1600935117.7312732,"caller":"app/web_hub.go:130","msg":"stopping websocket hub connections"}
+{"level":"info","ts":1600935117.7916646,"caller":"app/plugin.go:279","msg":"Shutting down plugins"}
+{"level":"info","ts":1600935118.2626646,"caller":"jobs/workers.go:205","msg":"Stopped workers"}
+{"level":"info","ts":1600935118.2709708,"caller":"jobs/schedulers.go:145","msg":"Stopping schedulers."}
+{"level":"info","ts":1600935118.2987983,"caller":"jobs/schedulers.go:77","msg":"Schedulers stopped."}
+{"level":"info","ts":1600935118.2989817,"caller":"app/server.go:469","msg":"Server stopped"}
+{"level":"info","ts":1600935124.1472583,"caller":"utils/i18n.go:83","msg":"Loaded system translations","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"level":"info","ts":1600935124.1473663,"caller":"app/server_app_adapters.go:58","msg":"Server is initializing..."}
+{"level":"info","ts":1600935124.1657927,"caller":"sqlstore/supplier.go:227","msg":"Pinging SQL","database":"master"}
+{"level":"warn","ts":1600935124.4255764,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.4.0","new_version":"5.5.0"}
+{"level":"warn","ts":1600935124.4297326,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.5.0"}
+{"level":"warn","ts":1600935124.4300168,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.5.0","new_version":"5.6.0"}
+{"level":"warn","ts":1600935124.4793777,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.6.0"}
+{"level":"warn","ts":1600935124.479697,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.6.0","new_version":"5.7.0"}
+{"level":"warn","ts":1600935124.4834437,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.7.0"}
+{"level":"warn","ts":1600935124.4837732,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.7.0","new_version":"5.8.0"}
+{"level":"warn","ts":1600935124.6108105,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.8.0"}
+{"level":"warn","ts":1600935124.611155,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.8.0","new_version":"5.9.0"}
+{"level":"warn","ts":1600935124.6145632,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.9.0"}
+{"level":"warn","ts":1600935124.6148696,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.9.0","new_version":"5.10.0"}
+{"level":"warn","ts":1600935125.0906258,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.10.0"}
+{"level":"warn","ts":1600935125.0910296,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.10.0","new_version":"5.11.0"}
+{"level":"warn","ts":1600935125.0963354,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.11.0"}
+{"level":"warn","ts":1600935125.0966911,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.11.0","new_version":"5.12.0"}
+{"level":"warn","ts":1600935125.223624,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.12.0"}
+{"level":"warn","ts":1600935125.2240126,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.12.0","new_version":"5.13.0"}
+{"level":"warn","ts":1600935125.229599,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.13.0"}
+{"level":"warn","ts":1600935125.2299075,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.13.0","new_version":"5.14.0"}
+{"level":"warn","ts":1600935125.2367632,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.14.0"}
+{"level":"warn","ts":1600935125.2370763,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.14.0","new_version":"5.15.0"}
+{"level":"warn","ts":1600935125.2412105,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.15.0"}
+{"level":"warn","ts":1600935125.2415245,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.15.0","new_version":"5.16.0"}
+{"level":"warn","ts":1600935125.305526,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.16.0"}
+{"level":"warn","ts":1600935125.5562122,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.16.0","new_version":"5.17.0"}
+{"level":"warn","ts":1600935125.5613248,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.17.0"}
+{"level":"warn","ts":1600935125.5616724,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.17.0","new_version":"5.18.0"}
+{"level":"warn","ts":1600935125.5663486,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.18.0"}
+{"level":"warn","ts":1600935125.5666893,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.18.0","new_version":"5.19.0"}
+{"level":"warn","ts":1600935125.570196,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.19.0"}
+{"level":"warn","ts":1600935125.5705445,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.19.0","new_version":"5.20.0"}
+{"level":"warn","ts":1600935125.5836442,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.20.0"}
+{"level":"warn","ts":1600935125.5840194,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.20.0","new_version":"5.21.0"}
+{"level":"warn","ts":1600935125.5880172,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.21.0"}
+{"level":"warn","ts":1600935125.5883067,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.21.0","new_version":"5.22.0"}
+{"level":"warn","ts":1600935125.7577672,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.22.0"}
+{"level":"warn","ts":1600935125.758184,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.22.0","new_version":"5.23.0"}
+{"level":"warn","ts":1600935125.7664278,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.23.0"}
+{"level":"warn","ts":1600935125.766729,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.23.0","new_version":"5.24.0"}
+{"level":"warn","ts":1600935125.912415,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.24.0"}
+{"level":"warn","ts":1600935125.9127946,"caller":"sqlstore/upgrade.go:200","msg":"Attempting to upgrade the database schema version","current_version":"5.24.0","new_version":"5.25.0"}
+{"level":"warn","ts":1600935125.9213164,"caller":"sqlstore/upgrade.go:195","msg":"The database schema version has been upgraded","version":"5.25.0"}
+{"level":"error","ts":1600935126.105571,"caller":"app/server_app_adapters.go:152","msg":"Mail server connection test is failed: SendEmailNotifications is not true"}
+{"level":"error","ts":1600935126.105634,"caller":"app/server_app_adapters.go:156","msg":"SiteURL must be set. Some features will operate incorrectly if the SiteURL is not set. See documentation for details: http://about.mattermost.com/default-site-url"}
+{"level":"info","ts":1600935127.2774734,"caller":"mlog/log.go:167","msg":"Starting up plugins"}
+{"level":"info","ts":1600935127.2788055,"caller":"app/plugin.go:202","msg":"Syncing plugins from the file store"}
+{"level":"info","ts":1600935130.3991928,"caller":"mlog/sugar.go:19","msg":"Ensuring Surveybot exists","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600935130.83176,"caller":"mlog/sugar.go:19","msg":"Surveybot created","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600935130.901702,"caller":"mlog/sugar.go:19","msg":"Upgrade detected. Checking if a survey should be scheduled.","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600935130.9040756,"caller":"app/server.go:273","msg":"Current version is 5.25.0 (5.25.0/Wed Jul 15 16:22:48 UTC 2020/0e46bac9fdd8c1140ad0e036104735fb4cbebef3/none)","current_version":"5.25.0","build_number":"5.25.0","build_date":"Wed Jul 15 16:22:48 UTC 2020","build_hash":"0e46bac9fdd8c1140ad0e036104735fb4cbebef3","build_hash_enterprise":"none"}
+{"level":"info","ts":1600935130.9041088,"caller":"app/server.go:284","msg":"Team Edition Build","enterprise_build":false}
+{"level":"info","ts":1600935130.904128,"caller":"app/server.go:288","msg":"Printing current working","directory":"/mattermost"}
+{"level":"info","ts":1600935130.904138,"caller":"app/server.go:289","msg":"Loaded config","source":"file:///mattermost/config/config.json"}
+{"level":"info","ts":1600935130.9683766,"caller":"mlog/sugar.go:19","msg":"Scheduling next survey for Oct 15, 2020","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600935131.1905859,"caller":"sqlstore/post_store.go:1571","msg":"Post.Message has size restrictions","max_characters":16383,"max_bytes":65535}
+{"level":"error","ts":1600935131.256669,"caller":"mlog/log.go:175","msg":"RPC call OnConfigurationChange to plugin failed.","plugin_id":"com.mattermost.nps","error":"connection is shut down"}
+{"level":"info","ts":1600935131.399831,"caller":"jobs/workers.go:73","msg":"Starting workers"}
+{"level":"info","ts":1600935131.3999057,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600935131.4080858,"caller":"app/web_hub.go:83","msg":"Starting websocket hubs","number_of_hubs":2}
+{"level":"info","ts":1600935131.4094267,"caller":"jobs/schedulers.go:74","msg":"Starting schedulers."}
+{"level":"info","ts":1600935131.4324894,"caller":"app/license.go:40","msg":"License key from https://mattermost.com required to unlock enterprise features."}
+{"level":"info","ts":1600935131.5466208,"caller":"app/server.go:525","msg":"Starting Server..."}
+{"level":"info","ts":1600935131.546669,"caller":"app/server.go:551","msg":"RateLimiter is enabled"}
+{"level":"info","ts":1600935131.5468273,"caller":"app/server.go:594","msg":"Server is listening on [::]:8000","address":"[::]:8000"}
+{"level":"error","ts":1600935159.916517,"caller":"jobs/jobs_watcher.go:70","msg":"Error occurred getting all pending statuses.","error":"SqlJobStore.GetAllByStatus: Unable to get the jobs., Status=pending, dial tcp 172.24.0.2:3306: connect: connection refused"}
+{"level":"error","ts":1600935161.5069602,"caller":"plugin/health_check.go:59","msg":"Health check failed for plugin","id":"com.mattermost.nps","error":"Plugin RPC connection is not responding"}
+{"level":"warn","ts":1600935161.9133596,"caller":"plugin/hclog_adapter.go:69","msg":"error closing client during Kill","plugin_id":"com.mattermost.nps","wrapped_extras":"errconnection is shut down"}
+{"level":"warn","ts":1600935162.1592283,"caller":"plugin/hclog_adapter.go:71","msg":"plugin failed to exit gracefully","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600935165.4360843,"caller":"mlog/sugar.go:19","msg":"Ensuring Surveybot exists","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600935525.9443572,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"error","ts":1600936232.7839997,"caller":"mlog/log.go:175","msg":"S3 Bucket is required","path":"/api/v4/file/s3_test","request_id":"fqedmkd787nszr471ut4a4xw1r","ip_addr":"172.24.0.4","user_id":"9qj9tscdofrmddapqhrjmqi4uo","method":"POST","err_where":"S3File","http_code":400,"err_details":""}
+{"level":"error","ts":1600936270.3768246,"caller":"mlog/log.go:175","msg":"S3 Bucket is required","path":"/api/v4/file/s3_test","request_id":"y9153nft3tr8383n7g19zfhhgw","ip_addr":"172.24.0.4","user_id":"9qj9tscdofrmddapqhrjmqi4uo","method":"POST","err_where":"S3File","http_code":400,"err_details":""}
+{"level":"info","ts":1600936272.186024,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600936510.9061658,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600936519.4319959,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600936574.9423995,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600936686.0252154,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"error","ts":1600936726.8198626,"caller":"mlog/log.go:175","msg":"Connection unsuccessful: SendMail: Failed to open connection., dial tcp 127.0.0.1:10025: connect: connection refused","path":"/api/v4/email/test","request_id":"oz89u1ppa3bi5yst4p17nkibde","ip_addr":"172.24.0.4","user_id":"9qj9tscdofrmddapqhrjmqi4uo","method":"POST","err_where":"testEmail","http_code":500,"err_details":""}
+{"level":"info","ts":1600936857.6624582,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600936916.2076056,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600936925.4177678,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600936933.6253762,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600937018.5882962,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600937067.1635728,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600937158.4922082,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600937510.2061107,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600937674.2051928,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600937740.6861255,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600938159.8053787,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"error","ts":1600938333.2612987,"caller":"mlog/log.go:175","msg":"File doesn't have a thumbnail image.","path":"/api/v4/files/ijgsi6m5mid53xhepw9nbnmx6h/thumbnail","request_id":"bskfek6su7do8rx8mnzkyi83xe","ip_addr":"172.24.0.4","user_id":"9qj9tscdofrmddapqhrjmqi4uo","method":"GET","err_where":"getFileThumbnail","http_code":400,"err_details":"file_id=ijgsi6m5mid53xhepw9nbnmx6h"}
+{"level":"error","ts":1600938333.2641377,"caller":"mlog/log.go:175","msg":"File doesn't have a thumbnail image.","path":"/api/v4/files/7cpupo5667d7pr6ykcapnb779y/thumbnail","request_id":"5xmosdb6cjr6tq3xkm18satkhh","ip_addr":"172.24.0.4","user_id":"9qj9tscdofrmddapqhrjmqi4uo","method":"GET","err_where":"getFileThumbnail","http_code":400,"err_details":"file_id=7cpupo5667d7pr6ykcapnb779y"}
+{"level":"error","ts":1600938333.2684946,"caller":"mlog/log.go:175","msg":"File doesn't have a thumbnail image.","path":"/api/v4/files/zrtfqeeqjbbr9cts4ojahu5tda/thumbnail","request_id":"636o1d69w7g8udwf9cszkdj31o","ip_addr":"172.24.0.4","user_id":"9qj9tscdofrmddapqhrjmqi4uo","method":"GET","err_where":"getFileThumbnail","http_code":400,"err_details":"file_id=zrtfqeeqjbbr9cts4ojahu5tda"}
+{"level":"error","ts":1600938333.5016153,"caller":"mlog/log.go:175","msg":"File doesn't have a thumbnail image.","path":"/api/v4/files/7cpupo5667d7pr6ykcapnb779y/thumbnail","request_id":"516udu7apbbcfjwpbdbexu7xqc","ip_addr":"172.24.0.4","user_id":"9qj9tscdofrmddapqhrjmqi4uo","method":"GET","err_where":"getFileThumbnail","http_code":400,"err_details":"file_id=7cpupo5667d7pr6ykcapnb779y"}
+{"level":"error","ts":1600938333.5065603,"caller":"mlog/log.go:175","msg":"File doesn't have a thumbnail image.","path":"/api/v4/files/ijgsi6m5mid53xhepw9nbnmx6h/thumbnail","request_id":"r6xqoos41388if9wg3xqwcupmr","ip_addr":"172.24.0.4","user_id":"9qj9tscdofrmddapqhrjmqi4uo","method":"GET","err_where":"getFileThumbnail","http_code":400,"err_details":"file_id=ijgsi6m5mid53xhepw9nbnmx6h"}
+{"level":"error","ts":1600938333.5110466,"caller":"mlog/log.go:175","msg":"File doesn't have a thumbnail image.","path":"/api/v4/files/zrtfqeeqjbbr9cts4ojahu5tda/thumbnail","request_id":"nfq5yw3pkpg6uxeioxrsk4717a","ip_addr":"172.24.0.4","user_id":"9qj9tscdofrmddapqhrjmqi4uo","method":"GET","err_where":"getFileThumbnail","http_code":400,"err_details":"file_id=zrtfqeeqjbbr9cts4ojahu5tda"}
+{"level":"error","ts":1600938900.154212,"caller":"app/notification_email.go:288","msg":"Encountered error while looking up team by name","team_name":"select_team","error":"SqlTeamStore.GetByName: Unable to find the existing team., name=select_team,sql: no rows in result set"}
+{"level":"error","ts":1600938902.3258321,"caller":"app/notification_email.go:103","msg":"Error while sending the email","user_email":"bits_bot@localhost","error":"SendMail: Failed to authenticate on SMTP server., 535 Authentication Credentials Invalid"}
+{"level":"error","ts":1600938915.789362,"caller":"app/notification_email.go:288","msg":"Encountered error while looking up team by name","team_name":"select_team","error":"SqlTeamStore.GetByName: Unable to find the existing team., name=select_team,sql: no rows in result set"}
+{"level":"error","ts":1600938917.9079742,"caller":"app/notification_email.go:103","msg":"Error while sending the email","user_email":"bits_bot@localhost","error":"SendMail: Failed to authenticate on SMTP server., 535 Authentication Credentials Invalid"}
+{"level":"info","ts":1600946585.4901187,"caller":"app/server.go:416","msg":"Stopping Server..."}
+{"level":"info","ts":1600946585.5463622,"caller":"app/web_hub.go:130","msg":"stopping websocket hub connections"}
+{"level":"info","ts":1600946585.5480027,"caller":"app/plugin.go:279","msg":"Shutting down plugins"}
+{"level":"info","ts":1600946585.6300566,"caller":"jobs/workers.go:205","msg":"Stopped workers"}
+{"level":"info","ts":1600946585.63011,"caller":"jobs/schedulers.go:145","msg":"Stopping schedulers."}
+{"level":"info","ts":1600946585.6301305,"caller":"jobs/schedulers.go:77","msg":"Schedulers stopped."}
+{"level":"info","ts":1600946585.6323104,"caller":"app/server.go:469","msg":"Server stopped"}
+{"level":"info","ts":1600946622.838477,"caller":"utils/i18n.go:83","msg":"Loaded system translations","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"level":"info","ts":1600946622.8391902,"caller":"app/server_app_adapters.go:58","msg":"Server is initializing..."}
+{"level":"info","ts":1600946622.8573415,"caller":"sqlstore/supplier.go:227","msg":"Pinging SQL","database":"master"}
+{"level":"error","ts":1600946622.8687897,"caller":"sqlstore/supplier.go:239","msg":"Failed to ping DB","error":"dial tcp 172.25.0.2:3306: connect: connection refused","retrying in seconds":10}
+{"level":"info","ts":1600946650.424128,"caller":"utils/i18n.go:83","msg":"Loaded system translations","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"level":"info","ts":1600946650.4245036,"caller":"app/server_app_adapters.go:58","msg":"Server is initializing..."}
+{"level":"info","ts":1600946650.4434843,"caller":"sqlstore/supplier.go:227","msg":"Pinging SQL","database":"master"}
+{"level":"error","ts":1600946650.4509835,"caller":"sqlstore/supplier.go:239","msg":"Failed to ping DB","error":"dial tcp 172.26.0.2:3306: connect: connection refused","retrying in seconds":10}
+{"level":"info","ts":1600946660.4621456,"caller":"sqlstore/supplier.go:227","msg":"Pinging SQL","database":"master"}
+{"level":"error","ts":1600946663.975966,"caller":"app/server_app_adapters.go:152","msg":"Mail server connection test is failed: Could not connect to SMTP server, check SMTP server settings."}
+{"level":"info","ts":1600946664.0452287,"caller":"mlog/log.go:167","msg":"Starting up plugins"}
+{"level":"info","ts":1600946664.0493948,"caller":"app/plugin.go:202","msg":"Syncing plugins from the file store"}
+{"level":"info","ts":1600946667.0688229,"caller":"mlog/sugar.go:19","msg":"Ensuring Surveybot exists","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600946668.0755663,"caller":"app/server.go:273","msg":"Current version is 5.25.0 (5.25.0/Wed Jul 15 16:22:48 UTC 2020/0e46bac9fdd8c1140ad0e036104735fb4cbebef3/none)","current_version":"5.25.0","build_number":"5.25.0","build_date":"Wed Jul 15 16:22:48 UTC 2020","build_hash":"0e46bac9fdd8c1140ad0e036104735fb4cbebef3","build_hash_enterprise":"none"}
+{"level":"info","ts":1600946668.075634,"caller":"app/server.go:284","msg":"Team Edition Build","enterprise_build":false}
+{"level":"info","ts":1600946668.0756752,"caller":"app/server.go:288","msg":"Printing current working","directory":"/mattermost"}
+{"level":"info","ts":1600946668.0756867,"caller":"app/server.go:289","msg":"Loaded config","source":"file:///mattermost/config/config.json"}
+{"level":"info","ts":1600946668.1237903,"caller":"sqlstore/post_store.go:1571","msg":"Post.Message has size restrictions","max_characters":16383,"max_bytes":65535}
+{"level":"info","ts":1600946668.211149,"caller":"jobs/workers.go:73","msg":"Starting workers"}
+{"level":"info","ts":1600946668.2112195,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600946668.2192574,"caller":"app/web_hub.go:83","msg":"Starting websocket hubs","number_of_hubs":2}
+{"level":"info","ts":1600946668.2203755,"caller":"jobs/schedulers.go:74","msg":"Starting schedulers."}
+{"level":"info","ts":1600946668.2872622,"caller":"app/license.go:40","msg":"License key from https://mattermost.com required to unlock enterprise features."}
+{"level":"info","ts":1600946668.4262,"caller":"app/server.go:525","msg":"Starting Server..."}
+{"level":"info","ts":1600946668.4262302,"caller":"app/server.go:551","msg":"RateLimiter is enabled"}
+{"level":"info","ts":1600946668.428708,"caller":"app/server.go:594","msg":"Server is listening on [::]:8000","address":"[::]:8000"}
+{"level":"info","ts":1600949691.1239429,"caller":"app/server.go:416","msg":"Stopping Server..."}
+{"level":"info","ts":1600949691.1636572,"caller":"app/web_hub.go:130","msg":"stopping websocket hub connections"}
+{"level":"info","ts":1600949691.685628,"caller":"app/plugin.go:279","msg":"Shutting down plugins"}
+{"level":"info","ts":1600949692.1945896,"caller":"jobs/workers.go:205","msg":"Stopped workers"}
+{"level":"info","ts":1600949692.2119029,"caller":"jobs/schedulers.go:145","msg":"Stopping schedulers."}
+{"level":"info","ts":1600949692.2119362,"caller":"jobs/schedulers.go:77","msg":"Schedulers stopped."}
+{"level":"info","ts":1600949692.2125108,"caller":"app/server.go:469","msg":"Server stopped"}
+{"level":"info","ts":1600949696.5163836,"caller":"app/web_hub.go:83","msg":"Starting websocket hubs","number_of_hubs":2}
+{"level":"info","ts":1600949696.5179722,"caller":"utils/i18n.go:83","msg":"Loaded system translations","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"level":"info","ts":1600949696.5277376,"caller":"sqlstore/supplier.go:227","msg":"Pinging SQL","database":"master"}
+{"level":"warn","ts":1600949696.7831652,"caller":"sqlstore/upgrade.go:201","msg":"Attempting to upgrade the database schema version","current_version":"5.25.0","new_version":"5.26.0"}
+{"level":"warn","ts":1600949696.8213904,"caller":"sqlstore/upgrade.go:196","msg":"The database schema version has been upgraded","version":"5.26.0"}
+{"level":"error","ts":1600949699.2887285,"caller":"app/server.go:404","msg":"Mail server connection test is failed: Could not connect to SMTP server, check SMTP server settings."}
+{"level":"info","ts":1600949699.3141365,"caller":"app/server.go:440","msg":"Current version is 5.26.0 (5.26.1/Tue Aug 25 22:32:03 UTC 2020/dd2f8185dbd9925b25e838cc4f6b12a92a074dec/none)","current_version":"5.26.0","build_number":"5.26.1","build_date":"Tue Aug 25 22:32:03 UTC 2020","build_hash":"dd2f8185dbd9925b25e838cc4f6b12a92a074dec","build_hash_enterprise":"none"}
+{"level":"info","ts":1600949699.3141832,"caller":"app/server.go:451","msg":"Team Edition Build","enterprise_build":false}
+{"level":"info","ts":1600949699.3142085,"caller":"app/server.go:455","msg":"Printing current working","directory":"/mattermost"}
+{"level":"info","ts":1600949699.3142197,"caller":"app/server.go:456","msg":"Loaded config","source":"file:///mattermost/config/config.json"}
+{"level":"info","ts":1600949699.3311512,"caller":"sqlstore/post_store.go:1597","msg":"Post.Message has size restrictions","max_characters":16383,"max_bytes":65535}
+{"level":"info","ts":1600949699.3873332,"caller":"app/server.go:479","msg":"Shutting down advanced logging"}
+{"level":"info","ts":1600949699.38822,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600949699.4692373,"caller":"app/server.go:783","msg":"Starting Server..."}
+{"level":"info","ts":1600949699.4692755,"caller":"app/server.go:817","msg":"RateLimiter is enabled"}
+{"level":"info","ts":1600949699.4694421,"caller":"app/server.go:860","msg":"Server is listening on [::]:8000","address":"[::]:8000"}
+{"level":"info","ts":1600949699.7994223,"caller":"mlog/log.go:176","msg":"Starting up plugins"}
+{"level":"info","ts":1600949699.7994764,"caller":"app/plugin.go:211","msg":"Syncing plugins from the file store"}
+{"level":"info","ts":1600949706.1347342,"caller":"mlog/sugar.go:19","msg":"Ensuring Surveybot exists","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600949707.300634,"caller":"mlog/sugar.go:19","msg":"Upgrade detected. Checking if a survey should be scheduled.","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600949707.308459,"caller":"mlog/sugar.go:19","msg":"Scheduling next survey for Oct 15, 2020","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600949707.3120549,"caller":"jobs/workers.go:77","msg":"Starting workers"}
+{"level":"info","ts":1600949707.4206464,"caller":"jobs/schedulers.go:78","msg":"Starting schedulers."}
+{"level":"info","ts":1600949707.525692,"caller":"app/license.go:54","msg":"License key from https://mattermost.com required to unlock enterprise features."}
+{"level":"error","ts":1600949709.6165433,"caller":"mlog/sugar.go:23","msg":"Failed to send survey notification email","plugin_id":"com.mattermost.nps","email":"sandeep@bitsbeat.com","err":"SendMail: Failed to authenticate on SMTP server., 535 Authentication Credentials Invalid"}
+{"level":"error","ts":1600949711.781752,"caller":"mlog/sugar.go:23","msg":"Failed to send survey notification email","plugin_id":"com.mattermost.nps","email":"shramik.awale@bitsbeat.com","err":"SendMail: Failed to authenticate on SMTP server., 535 Authentication Credentials Invalid"}
+{"level":"error","ts":1600949714.0396452,"caller":"mlog/sugar.go:23","msg":"Failed to send survey notification email","plugin_id":"com.mattermost.nps","email":"shrawan@bitsbeat.com","err":"SendMail: Failed to authenticate on SMTP server., 535 Authentication Credentials Invalid"}
+{"level":"info","ts":1600949715.1343021,"caller":"mlog/sugar.go:19","msg":"Sent notification of next survey to admins","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600949739.1425204,"caller":"app/server.go:643","msg":"Stopping Server..."}
+{"level":"info","ts":1600949740.2651496,"caller":"app/web_hub.go:115","msg":"stopping websocket hub connections"}
+{"level":"info","ts":1600949740.2652035,"caller":"app/plugin.go:288","msg":"Shutting down plugins"}
+{"level":"info","ts":1600949742.7749135,"caller":"jobs/workers.go:217","msg":"Stopped workers"}
+{"level":"info","ts":1600949742.9379678,"caller":"jobs/schedulers.go:149","msg":"Stopping schedulers."}
+{"level":"info","ts":1600949742.938007,"caller":"jobs/schedulers.go:81","msg":"Schedulers stopped."}
+{"level":"info","ts":1600949742.9774866,"caller":"app/server.go:721","msg":"Server stopped"}
+{"level":"info","ts":1600949758.4574265,"caller":"app/web_hub.go:83","msg":"Starting websocket hubs","number_of_hubs":2}
+{"level":"info","ts":1600949758.470537,"caller":"utils/i18n.go:83","msg":"Loaded system translations","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"level":"info","ts":1600949758.558788,"caller":"sqlstore/supplier.go:227","msg":"Pinging SQL","database":"master"}
+{"level":"error","ts":1600949758.5820758,"caller":"sqlstore/supplier.go:239","msg":"Failed to ping DB","error":"dial tcp 172.27.0.3:3306: connect: connection refused","retrying in seconds":10}
+{"level":"info","ts":1600949768.6170452,"caller":"sqlstore/supplier.go:227","msg":"Pinging SQL","database":"master"}
+{"level":"error","ts":1600949774.0685797,"caller":"app/server.go:404","msg":"Mail server connection test is failed: Could not connect to SMTP server, check SMTP server settings."}
+{"level":"info","ts":1600949774.1004767,"caller":"app/server.go:440","msg":"Current version is 5.26.0 (5.26.1/Tue Aug 25 22:32:03 UTC 2020/dd2f8185dbd9925b25e838cc4f6b12a92a074dec/none)","current_version":"5.26.0","build_number":"5.26.1","build_date":"Tue Aug 25 22:32:03 UTC 2020","build_hash":"dd2f8185dbd9925b25e838cc4f6b12a92a074dec","build_hash_enterprise":"none"}
+{"level":"info","ts":1600949774.1005235,"caller":"app/server.go:451","msg":"Team Edition Build","enterprise_build":false}
+{"level":"info","ts":1600949774.1005497,"caller":"app/server.go:455","msg":"Printing current working","directory":"/mattermost"}
+{"level":"info","ts":1600949774.1005614,"caller":"app/server.go:456","msg":"Loaded config","source":"file:///mattermost/config/config.json"}
+{"level":"info","ts":1600949774.1437645,"caller":"sqlstore/post_store.go:1597","msg":"Post.Message has size restrictions","max_characters":16383,"max_bytes":65535}
+{"level":"info","ts":1600949774.1993885,"caller":"app/server.go:479","msg":"Shutting down advanced logging"}
+{"level":"info","ts":1600949774.200269,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600949774.3183799,"caller":"app/server.go:783","msg":"Starting Server..."}
+{"level":"info","ts":1600949774.318423,"caller":"app/server.go:817","msg":"RateLimiter is enabled"}
+{"level":"info","ts":1600949774.3186803,"caller":"app/server.go:860","msg":"Server is listening on [::]:8000","address":"[::]:8000"}
+{"level":"info","ts":1600949778.833232,"caller":"mlog/log.go:176","msg":"Starting up plugins"}
+{"level":"info","ts":1600949778.8345673,"caller":"app/plugin.go:211","msg":"Syncing plugins from the file store"}
+{"level":"info","ts":1600949782.470792,"caller":"mlog/sugar.go:19","msg":"Ensuring Surveybot exists","plugin_id":"com.mattermost.nps"}
+{"level":"info","ts":1600949783.8979106,"caller":"jobs/workers.go:77","msg":"Starting workers"}
+{"level":"info","ts":1600949783.9274755,"caller":"jobs/schedulers.go:78","msg":"Starting schedulers."}
+{"level":"info","ts":1600949784.1295483,"caller":"app/license.go:54","msg":"License key from https://mattermost.com required to unlock enterprise features."}
+{"level":"info","ts":1600950394.548867,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"rmx4hh6awincbngjx6t5it6bca"}
+{"level":"info","ts":1600950778.8190684,"caller":"bleveengine/bleve.go:267","msg":"UpdateConf Bleve"}
+{"level":"info","ts":1600951384.6299562,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"iwyabowqajbfuncntgyxujaoac"}
+{"level":"info","ts":1600951984.7761962,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"mtb6eyiucfr99pojqmhz3j31uo"}
+{"level":"info","ts":1600952584.9720745,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"zocuwqxoyp837f946uxhuaoruh"}
+{"level":"info","ts":1600953185.0502155,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"nymeh9t577rmf818qor67qiinr"}
+{"level":"info","ts":1600953785.1750865,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"da596c4hyprdjcy9czwfmyykcc"}
+{"level":"info","ts":1600954385.255132,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"3u7fskgh8t8hfrathj8s7wmshe"}
+{"level":"info","ts":1600954985.2785597,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"x4tqtum4f784xq1u3it4igf57r"}
+{"level":"info","ts":1600955585.5044496,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"166pp9q5ztgd7borhoqbk915ee"}
+{"level":"info","ts":1600956185.5448463,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"1sed4o99wt8nt8hhwfc3tn4iqr"}
+{"level":"info","ts":1600956785.698775,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"iidwmnmuop8utxe1grbwkmye9h"}
+{"level":"info","ts":1600957385.718661,"caller":"expirynotify/worker.go:85","msg":"Worker: Job is complete","worker":"ExpiryNotify","job_id":"iyzgi3mf1tbxbb7ceze6okmucw"}
